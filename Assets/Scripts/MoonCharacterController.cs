@@ -4,19 +4,19 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class MoonCharacterController : MonoBehaviour
 {
-    [Header("Movement")]
+    [Header("Р СѓС…")]
     public float moveSpeed = 6f;
 
-    [Header("Moon Physics")]
+    [Header("Р¤С–Р·РёРєР° РњС–СЃСЏС†СЏ")]
     public float gravity = -5f;
     public float jumpHeight = 15f;
 
-    [Header("Ground Check")]
+    [Header("РџСЂРѕРІС–СЂРєР° Р·РµРјР»С–")]
     public Transform groundCheck;
     public float groundRadius = 0.25f;
     public LayerMask groundMask;
 
-    [Header("Sprint")]
+    [Header("Р‘С–Рі")]
     public float walkSpeed = 6f;
     public float sprintSpeed = 10f;
 
@@ -93,7 +93,6 @@ public class MoonCharacterController : MonoBehaviour
 
         if (isGrounded && velocity.y < 0)
         {
-            // Гравець лишається на землі
             velocity.y = -5f;
         }
     }
@@ -101,7 +100,6 @@ public class MoonCharacterController : MonoBehaviour
 
     void Move()
     {
-        // Горизонтальний рух
 
         Vector3 move =
             transform.right * moveInput.x +
@@ -112,8 +110,7 @@ public class MoonCharacterController : MonoBehaviour
             move * currentSpeed * Time.deltaTime
         );
 
-
-        // Стрибок
+        
 
         if (jumpPressed && isGrounded)
         {
@@ -123,13 +120,11 @@ public class MoonCharacterController : MonoBehaviour
                 );
         }
 
-
-        // Гравітація
+        
 
         velocity.y += gravity * Time.deltaTime;
 
-
-        // Вертикальний рух
+        
 
         controller.Move(
             velocity * Time.deltaTime

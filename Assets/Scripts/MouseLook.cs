@@ -13,28 +13,32 @@ public class MouseLook : MonoBehaviour
     private Vector2 currentMouseDelta;
     private Vector2 smoothMouseDelta;
 
-
-    void Start()
+    private void Start()
     {
+        // Р‘Р»РѕРєСѓС” РєСѓСЂСЃРѕСЂ Сѓ С†РµРЅС‚СЂС– РµРєСЂР°РЅР°
+        Cursor.lockState = CursorLockMode.Locked;
+
+        // РҐРѕРІР°С” РєСѓСЂСЃРѕСЂ
+        Cursor.visible = false;
+    }
+
+    private void Update()
+    {
+        Look();
+
+        // Р—Р°РІР¶РґРё Р·Р°Р»РёС€Р°С” РєСѓСЂСЃРѕСЂ Р·Р°Р±Р»РѕРєРѕРІР°РЅРёРј
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-
-    void Update()
-    {
-        Look();
-    }
-
-
-    void Look()
+    private void Look()
     {
         if (Mouse.current == null)
+        {
             return;
-
+        }
 
         Vector2 mouseInput = Mouse.current.delta.ReadValue();
-
 
         currentMouseDelta = Vector2.Lerp(
             currentMouseDelta,
@@ -42,12 +46,15 @@ public class MouseLook : MonoBehaviour
             smoothSpeed * Time.deltaTime
         );
 
+        float mouseX =
+            currentMouseDelta.x *
+            mouseSensitivity *
+            Time.deltaTime;
 
-        float mouseX = currentMouseDelta.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = currentMouseDelta.y * mouseSensitivity * Time.deltaTime;
-
-
-        // Вертикальний рух камери
+        float mouseY =
+            currentMouseDelta.y *
+            mouseSensitivity *
+            Time.deltaTime;
 
         xRotation -= mouseY;
 
@@ -57,12 +64,8 @@ public class MouseLook : MonoBehaviour
             90f
         );
 
-
         transform.localRotation =
             Quaternion.Euler(xRotation, 0f, 0f);
-
-
-        // Горизонтальний рух гравця
 
         playerBody.Rotate(
             Vector3.up * mouseX
