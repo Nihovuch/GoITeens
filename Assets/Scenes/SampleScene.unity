@@ -10987,7 +10987,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
   playerBody: {fileID: 45328214}
   mouseSensitivity: 30
-  smoothSpeed: 10
 --- !u!1 &956069343
 GameObject:
   m_ObjectHideFlags: 0
