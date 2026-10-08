@@ -6792,7 +6792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &599777447
 Transform:
   m_ObjectHideFlags: 0
@@ -6818,7 +6818,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599777446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -6828,7 +6828,7 @@ MonoBehaviour:
   startingProduction: 15
   productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 44433041}
   productionText: {fileID: 14623755}
@@ -6987,7 +6987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &628528203
 Transform:
   m_ObjectHideFlags: 0
@@ -7013,7 +7013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628528202}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -7023,7 +7023,7 @@ MonoBehaviour:
   startingProduction: 180
   productionIncrease: 25
   startingUpgradeCost: 5000
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 921267610}
   productionText: {fileID: 1731790908}
@@ -7488,7 +7488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &691454813
 Transform:
   m_ObjectHideFlags: 0
@@ -7514,7 +7514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691454812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -7524,7 +7524,7 @@ MonoBehaviour:
   startingProduction: 100
   productionIncrease: 25
   startingUpgradeCost: 1800
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 918556203}
   productionText: {fileID: 119548319}
@@ -8432,7 +8432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &760010052
 Transform:
   m_ObjectHideFlags: 0
@@ -8458,7 +8458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760010051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -8468,7 +8468,7 @@ MonoBehaviour:
   startingProduction: 55
   productionIncrease: 25
   startingUpgradeCost: 700
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1714717513}
   productionText: {fileID: 472401896}
@@ -9361,7 +9361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &847237014
 Transform:
   m_ObjectHideFlags: 0
@@ -9387,7 +9387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847237013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -9397,7 +9397,7 @@ MonoBehaviour:
   startingProduction: 30
   productionIncrease: 25
   startingUpgradeCost: 250
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 445122141}
   productionText: {fileID: 755141071}
@@ -9939,7 +9939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &892793378
 Transform:
   m_ObjectHideFlags: 0
@@ -9965,7 +9965,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892793377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -9975,7 +9975,7 @@ MonoBehaviour:
   startingProduction: 15
   productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 635086356}
   productionText: {fileID: 454993377}
@@ -11242,7 +11242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &974940856
 Transform:
   m_ObjectHideFlags: 0
@@ -11268,7 +11268,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974940855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -11278,7 +11278,7 @@ MonoBehaviour:
   startingProduction: 100
   productionIncrease: 25
   startingUpgradeCost: 1800
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1554208051}
   productionText: {fileID: 1301837039}
@@ -12576,7 +12576,7 @@ MonoBehaviour:
   startingProduction: 10
   productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 170852743}
   productionText: {fileID: 1690238780}
@@ -13099,7 +13099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1175143430
 Transform:
   m_ObjectHideFlags: 0
@@ -13125,7 +13125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175143429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -13135,7 +13135,7 @@ MonoBehaviour:
   startingProduction: 320
   productionIncrease: 25
   startingUpgradeCost: 15000
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1386053592}
   productionText: {fileID: 862220516}
@@ -15104,7 +15104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1390093737
 Transform:
   m_ObjectHideFlags: 0
@@ -15130,7 +15130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390093736}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -15140,7 +15140,7 @@ MonoBehaviour:
   startingProduction: 180
   productionIncrease: 25
   startingUpgradeCost: 5000
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 595627803}
   productionText: {fileID: 1663248081}
@@ -17278,7 +17278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1575137108
 Transform:
   m_ObjectHideFlags: 0
@@ -17304,7 +17304,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575137107}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -17314,7 +17314,7 @@ MonoBehaviour:
   startingProduction: 55
   productionIncrease: 25
   startingUpgradeCost: 700
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1773286108}
   productionText: {fileID: 13721089}
@@ -20753,7 +20753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1810842304
 Transform:
   m_ObjectHideFlags: 0
@@ -20779,7 +20779,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810842303}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -20789,7 +20789,7 @@ MonoBehaviour:
   startingProduction: 30
   productionIncrease: 25
   startingUpgradeCost: 250
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1282461939}
   productionText: {fileID: 442506252}
@@ -21903,7 +21903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1939992378
 Transform:
   m_ObjectHideFlags: 0
@@ -21929,7 +21929,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939992377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf39636379f20a34b8920511efcae000, type: 3}
   m_Name: 
@@ -21939,7 +21939,7 @@ MonoBehaviour:
   startingProduction: 320
   productionIncrease: 25
   startingUpgradeCost: 15000
-  upgradeCostIncrease: 20
+  upgradeCostIncrease: 45
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 691481181}
   productionText: {fileID: 1502637758}
