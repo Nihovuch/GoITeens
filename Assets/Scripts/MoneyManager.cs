@@ -3,7 +3,8 @@ using TMPro;
 
 public class MoneyManager : MonoBehaviour
 {
-    public int money = 0;
+    [Header("Гроші")]
+    public float money = 0f;
 
     [Header("Налаштування інтерфейсу")]
     public TMP_Text moneyText;
@@ -14,19 +15,20 @@ public class MoneyManager : MonoBehaviour
     }
 
     // Додає гроші гравцю
-    public void AddMoney(int amount)
+    public void AddMoney(float amount)
     {
         money += amount;
         UpdateMoneyUI();
     }
 
     // Перевіряє, чи достатньо грошей, і забирає їх
-    public bool SpendMoney(int amount)
+    public bool SpendMoney(float amount)
     {
         if (money >= amount)
         {
             money -= amount;
             UpdateMoneyUI();
+
             return true;
         }
 
@@ -38,7 +40,7 @@ public class MoneyManager : MonoBehaviour
     {
         if (moneyText != null)
         {
-            moneyText.text = "$" + money;
+            moneyText.text = "$" + Mathf.FloorToInt(money);
         }
     }
 }

@@ -6,29 +6,23 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
 
     public float mouseSensitivity = 300f;
-    public float smoothSpeed = 10f;
 
     private float xRotation = 0f;
 
-    private Vector2 currentMouseDelta;
-    private Vector2 smoothMouseDelta;
-
     private void Start()
     {
-        // Блокує курсор у центрі екрана
+        // Блокуємо курсор у центрі екрана
         Cursor.lockState = CursorLockMode.Locked;
-
-        // Ховає курсор
         Cursor.visible = false;
     }
 
     private void Update()
     {
-        Look();
-
-        // Завжди залишає курсор заблокованим
+        // Завжди залишаємо курсор заблокованим
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        Look();
     }
 
     private void Look()
@@ -38,24 +32,22 @@ public class MouseLook : MonoBehaviour
             return;
         }
 
-        Vector2 mouseInput = Mouse.current.delta.ReadValue();
+        // Отримуємо рух миші
+        Vector2 mouseInput =
+            Mouse.current.delta.ReadValue();
 
-        currentMouseDelta = Vector2.Lerp(
-            currentMouseDelta,
-            mouseInput,
-            smoothSpeed * Time.deltaTime
-        );
-
+        // Розраховуємо поворот камери
         float mouseX =
-            currentMouseDelta.x *
+            mouseInput.x *
             mouseSensitivity *
             Time.deltaTime;
 
         float mouseY =
-            currentMouseDelta.y *
+            mouseInput.y *
             mouseSensitivity *
             Time.deltaTime;
 
+        // Поворот вгору/вниз
         xRotation -= mouseY;
 
         xRotation = Mathf.Clamp(
@@ -65,8 +57,13 @@ public class MouseLook : MonoBehaviour
         );
 
         transform.localRotation =
-            Quaternion.Euler(xRotation, 0f, 0f);
+            Quaternion.Euler(
+                xRotation,
+                0f,
+                0f
+            );
 
+        // Поворот вліво/вправо
         playerBody.Rotate(
             Vector3.up * mouseX
         );

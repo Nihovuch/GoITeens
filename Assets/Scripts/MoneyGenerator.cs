@@ -12,13 +12,13 @@ public class MoneyGenerator : MonoBehaviour
     public float startingProduction = 10f;
 
     // На скільки відсотків збільшується виробництво
-    public float productionIncrease = 20f;
+    public float productionIncrease = 25f;
 
     [Header("Налаштування покращення")]
-    public int startingUpgradeCost = 100;
+    public float startingUpgradeCost = 100f;
 
     // На скільки відсотків збільшується ціна наступного покращення
-    public float upgradeCostIncrease = 10f;
+    public float upgradeCostIncrease = 20f;
 
     [Header("Гроші")]
     public MoneyManager moneyManager;
@@ -30,9 +30,9 @@ public class MoneyGenerator : MonoBehaviour
     public Button upgradeButton;
 
     private float currentProduction;
-    private int currentUpgradeCost;
+    private float currentUpgradeCost;
 
-    // Таймер для виробництва грошей
+    // Накопичує частини грошей між секундами
     private float moneyTimer = 0f;
 
     private void Start()
@@ -40,6 +40,7 @@ public class MoneyGenerator : MonoBehaviour
         currentProduction = startingProduction;
         currentUpgradeCost = startingUpgradeCost;
 
+        // Підключає кнопку покращення
         upgradeButton.onClick.AddListener(UpgradeGenerator);
 
         UpdateUI();
@@ -47,7 +48,7 @@ public class MoneyGenerator : MonoBehaviour
 
     private void Update()
     {
-        // Додаємо час до таймера
+        // Додає час до таймера
         moneyTimer += Time.deltaTime;
 
         // Кожну секунду додаємо гроші
@@ -55,36 +56,33 @@ public class MoneyGenerator : MonoBehaviour
         {
             moneyTimer -= 1f;
 
-            int moneyToGive = Mathf.RoundToInt(currentProduction);
-
-            moneyManager.AddMoney(moneyToGive);
+            // Додає точну кількість грошей
+            moneyManager.AddMoney(currentProduction);
         }
     }
 
     // Покращує генератор
     private void UpgradeGenerator()
     {
-        // Перевіряємо, чи генератор вже досяг максимального рівня
+        // Перевіряє, чи генератор вже досяг максимального рівня
         if (currentLevel >= maxLevel)
         {
             return;
         }
 
-        // Перевіряємо, чи достатньо грошей
+        // Перевіряє, чи достатньо грошей
         if (moneyManager.SpendMoney(currentUpgradeCost))
         {
             // Підвищуємо рівень
             currentLevel++;
 
-            // Збільшуємо виробництво грошей
+            // Збільшує виробництво грошей
             currentProduction *=
                 1f + (productionIncrease / 100f);
 
-            // Збільшуємо ціну наступного покращення
-            currentUpgradeCost = Mathf.RoundToInt(
-                currentUpgradeCost *
-                (1f + upgradeCostIncrease / 100f)
-            );
+            // Збільшує ціну наступного покращення
+            currentUpgradeCost *=
+                1f + (upgradeCostIncrease / 100f);
 
             UpdateUI();
 
@@ -102,22 +100,27 @@ public class MoneyGenerator : MonoBehaviour
     // Оновлює інформацію на інтерфейсі
     private void UpdateUI()
     {
-        levelText.text = "Рівень " + currentLevel;
+        levelText.text =
+            "Рівень " + currentLevel;
 
         productionText.text =
-            "$" + currentProduction.ToString("0.00") + " / сек";
+            "$" +
+            currentProduction.ToString("0.00") +
+            " / сек";
 
         // Якщо досягнуто максимального рівня
         if (currentLevel >= maxLevel)
         {
-            upgradeCostText.text = "МАКСИМАЛЬНИЙ РІВЕНЬ";
+            upgradeCostText.text =
+                "МАКСИМАЛЬНИЙ РІВЕНЬ";
 
             upgradeButton.interactable = false;
         }
         else
         {
             upgradeCostText.text =
-                "Покращення: $" + currentUpgradeCost;
+                "Покращення: $" +
+                Mathf.CeilToInt(currentUpgradeCost);
 
             upgradeButton.interactable = true;
         }
