@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 1000
+  price: 500
   wall: {fileID: 2106682735}
   purchaseCanvas: {fileID: 155412549}
   purchaseButton: {fileID: 1558799505}
@@ -2125,7 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 150000
+  price: 250000
   wall: {fileID: 1345053860}
   purchaseCanvas: {fileID: 2102301680}
   purchaseButton: {fileID: 1862719548}
@@ -6792,7 +6792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &599777447
 Transform:
   m_ObjectHideFlags: 0
@@ -6825,10 +6825,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
+  startingProduction: 15
+  productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 44433041}
   productionText: {fileID: 14623755}
@@ -6987,7 +6987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &628528203
 Transform:
   m_ObjectHideFlags: 0
@@ -7020,10 +7020,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 180
+  productionIncrease: 25
+  startingUpgradeCost: 5000
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 921267610}
   productionText: {fileID: 1731790908}
@@ -7488,7 +7488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &691454813
 Transform:
   m_ObjectHideFlags: 0
@@ -7521,10 +7521,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 100
+  productionIncrease: 25
+  startingUpgradeCost: 1800
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 918556203}
   productionText: {fileID: 119548319}
@@ -8432,7 +8432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &760010052
 Transform:
   m_ObjectHideFlags: 0
@@ -8465,10 +8465,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 55
+  productionIncrease: 25
+  startingUpgradeCost: 700
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1714717513}
   productionText: {fileID: 472401896}
@@ -9361,7 +9361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &847237014
 Transform:
   m_ObjectHideFlags: 0
@@ -9394,10 +9394,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 30
+  productionIncrease: 25
+  startingUpgradeCost: 250
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 445122141}
   productionText: {fileID: 755141071}
@@ -9939,7 +9939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &892793378
 Transform:
   m_ObjectHideFlags: 0
@@ -9972,10 +9972,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
+  startingProduction: 15
+  productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 635086356}
   productionText: {fileID: 454993377}
@@ -10371,7 +10371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f917e9c0f7adf04ca9e72aa515b2851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
-  targetMoney: 500000
+  targetMoney: 1000000
   gameTime: 1800
   moneyManager: {fileID: 898163318}
   targetText: {fileID: 270343606}
@@ -10987,7 +10987,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
   playerBody: {fileID: 45328214}
   mouseSensitivity: 30
-  smoothSpeed: 10
 --- !u!1 &956069343
 GameObject:
   m_ObjectHideFlags: 0
@@ -11243,7 +11242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &974940856
 Transform:
   m_ObjectHideFlags: 0
@@ -11276,10 +11275,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 100
+  productionIncrease: 25
+  startingUpgradeCost: 1800
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1554208051}
   productionText: {fileID: 1301837039}
@@ -12014,7 +12013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 5000
+  price: 2500
   wall: {fileID: 710569770}
   purchaseCanvas: {fileID: 418173042}
   purchaseButton: {fileID: 100603215}
@@ -12290,7 +12289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 25000
+  price: 10000
   wall: {fileID: 1229573107}
   purchaseCanvas: {fileID: 863245585}
   purchaseButton: {fileID: 165194549}
@@ -12574,10 +12573,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 4
-  productionIncrease: 20
+  startingProduction: 10
+  productionIncrease: 25
   startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 170852743}
   productionText: {fileID: 1690238780}
@@ -13100,7 +13099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1175143430
 Transform:
   m_ObjectHideFlags: 0
@@ -13133,10 +13132,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 320
+  productionIncrease: 25
+  startingUpgradeCost: 15000
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1386053592}
   productionText: {fileID: 862220516}
@@ -15105,7 +15104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1390093737
 Transform:
   m_ObjectHideFlags: 0
@@ -15138,10 +15137,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 180
+  productionIncrease: 25
+  startingUpgradeCost: 5000
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 595627803}
   productionText: {fileID: 1663248081}
@@ -16300,7 +16299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 25000
+  price: 100000
   wall: {fileID: 1818612279}
   purchaseCanvas: {fileID: 523871310}
   purchaseButton: {fileID: 807497698}
@@ -17279,7 +17278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1575137108
 Transform:
   m_ObjectHideFlags: 0
@@ -17312,10 +17311,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 55
+  productionIncrease: 25
+  startingUpgradeCost: 700
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1773286108}
   productionText: {fileID: 13721089}
@@ -20713,7 +20712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ec20191adea248a9c7318d9ac6e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyableWall
-  price: 150000
+  price: 35000
   wall: {fileID: 746873156}
   purchaseCanvas: {fileID: 810974829}
   purchaseButton: {fileID: 289049581}
@@ -20754,7 +20753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1810842304
 Transform:
   m_ObjectHideFlags: 0
@@ -20787,10 +20786,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 30
+  productionIncrease: 25
+  startingUpgradeCost: 250
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 1282461939}
   productionText: {fileID: 442506252}
@@ -21904,7 +21903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1939992378
 Transform:
   m_ObjectHideFlags: 0
@@ -21937,10 +21936,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyGenerator
   maxLevel: 5
   currentLevel: 1
-  startingProduction: 10
-  productionIncrease: 20
-  startingUpgradeCost: 100
-  upgradeCostIncrease: 10
+  startingProduction: 320
+  productionIncrease: 25
+  startingUpgradeCost: 15000
+  upgradeCostIncrease: 20
   moneyManager: {fileID: 898163318}
   levelText: {fileID: 691481181}
   productionText: {fileID: 1502637758}
