@@ -117,12 +117,16 @@ namespace SlimUI.ModernMenu{
 			}
 		}
 
-		public void PlayCampaign(){
-			exitMenu.SetActive(false);
-			if(extrasMenu) extrasMenu.SetActive(false);
-			playMenu.SetActive(true);
-		}
-		
+		public void PlayCampaign()
+		{
+			//exitMenu.SetActive(false);
+			//if(extrasMenu) extrasMenu.SetActive(false);
+			//playMenu.SetActive(true);
+
+			LoadScene("SampleScene");
+
+        }
+
 		public void PlayCampaignMobile(){
 			exitMenu.SetActive(false);
 			if(extrasMenu) extrasMenu.SetActive(false);
